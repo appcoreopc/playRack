@@ -31,7 +31,7 @@ export default class HomeScreen extends React.Component {
               <Text style={styles.songBandText}>Imagine Dragons</Text>              
             </TouchableOpacity>
 
-            <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>              
+            <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems : 'center'}}>              
               <MaterialIcons name="skip-previous" size={30} style={styles.iconControlLeft} />
               <MaterialIcons name="play-circle-filled" size={80} color="#7AEEBA"  />
               <MaterialIcons name="skip-next" size={30} color="#a3b4fd" style={styles.iconControlRight} />    
