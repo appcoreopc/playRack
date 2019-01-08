@@ -31,21 +31,21 @@ export default class HomeScreen extends React.Component {
               <Text style={styles.songBandText}>Imagine Dragons</Text>              
             </TouchableOpacity>
 
-            <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems : 'center'}}>              
+            <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems : 'center'}}>    
+            <TouchableOpacity onPress={this._controlPlayPrevious} style={styles.helpLink}>          
               <MaterialIcons name="skip-previous" size={30} style={styles.iconControlLeft} />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={this._controlPlayOrPause} style={styles.helpLink}>
               <MaterialIcons name="play-circle-filled" size={80} color="#7AEEBA"  />
-              <MaterialIcons name="skip-next" size={30} color="#a3b4fd" style={styles.iconControlRight} />    
+            </TouchableOpacity>
+            <TouchableOpacity onPress={this._controlPlayPNext} style={styles.helpLink}>
+              <MaterialIcons name="skip-next" size={30} color="#a3b4fd" style={styles.iconControlRight} />
+            </TouchableOpacity>    
             </View>
           </View>
         </ScrollView>
 
-        <View style={styles.tabBarInfoContainer}>
-          <Text style={styles.tabBarInfoText}>This is the equalizer </Text>
-
-          <View style={[styles.codeHighlightContainer, styles.navigationFilename]}>
-            <MonoText style={styles.codeHighlightText}>navigation/MainTabNavigator.js</MonoText>
-          </View>
-        </View>
+      
       </View>
     );
   }
@@ -76,6 +76,19 @@ export default class HomeScreen extends React.Component {
   _handleLearnMorePress = () => {
     WebBrowser.openBrowserAsync('https://docs.expo.io/versions/latest/guides/development-mode');
   };
+
+  _controlPlayPrevious = () => {
+
+  }
+
+  _controlPlayPNext = () => {
+
+  }
+
+  _controlPlayOrPause = () => {
+
+  }
+
 
   _handleHelpPress = () => {
     WebBrowser.openBrowserAsync(
