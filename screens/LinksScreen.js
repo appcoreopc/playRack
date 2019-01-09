@@ -74,7 +74,7 @@ export default class LinksScreen extends React.Component {
            
            <View style={{flexDirection: 'row', justifyContent: 'flex-start', alignItems : 'center', paddingLeft : 50}}>
                <Ionicons name="md-list" size={20} style={{color :'#ffff'}}/>  
-               <TextInput placeholder="search songs" style={{ paddingLeft : 80, width: 150, borderWidth: 0}}/>
+               <TextInput placeholder="search songs" style={{ color :'#fff', paddingLeft : 80, width: 150, borderWidth: 0}}/>
                <AntDesign name="search1" size={18} style={{ paddingLeft : 64, color :'#ffff'}}/>  
            </View> 
 
@@ -104,7 +104,7 @@ export default class LinksScreen extends React.Component {
       {
         this.data.map((l, i) => (
           
-          <ListItem containerStyle={styles.bottomBorderLight}     
+          <ListItem  containerStyle={styles.listItemStyle}     
           key={i}
           title={              
             <View>
@@ -147,7 +147,7 @@ export default class LinksScreen extends React.Component {
         flex: 1,
         paddingTop: 0,
         marginTop : 0,
-        backgroundColor: '#fff',
+        backgroundColor: '#fff'
       },
       backgroundImage: {
         flex: 1,
@@ -156,8 +156,8 @@ export default class LinksScreen extends React.Component {
         marginBottom : 0
       },
       containerLightBorder : {
-        marginBottom: 0, borderColor : '#efefef', 
-        marginTop : 0, paddingTop : 0
+        marginBottom: 0, borderColor : '#ffffff', 
+        marginTop : 0, paddingTop : 0, borderWidth : 0, borderBottomColor: 'transparent', borderBottomWidth: 0
       },
       songTitleText : {
        fontSize : 13,
@@ -170,6 +170,9 @@ export default class LinksScreen extends React.Component {
        },
        iconShuffle : {
          paddingLeft : 120,color : '#ffff'
+       },
+       listItemStyle : {
+        borderBottomColor: 'transparent' , borderBottomWidth: 0
        }
     });
   
