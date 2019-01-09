@@ -82,8 +82,8 @@ export default class LinksScreen extends React.Component {
               <Text style={styles.songTitleText}>Sort by Songs</Text>    
 
               <View style={{flexDirection: 'row', paddingLeft : 146}}>
-              <Icon raised name='shuffle' type='entypo' size={14} color='#a3b4fd' containerStyle={{backgroundColor : '#fff'}}/>
-              <Icon raised name='grid' type='entypo' size={14} color='#a3b4fd' containerStyle={{backgroundColor : '#fff'}}/>
+              <Icon raised name='shuffle'  onPress={() => console.log('hello')}  type='entypo' size={14} color='#a3b4fd' containerStyle={{backgroundColor : '#fff'}}/>
+              <Icon raised name='grid'  onPress={() => console.log('hello')}  type='entypo' size={14} color='#a3b4fd' containerStyle={{backgroundColor : '#fff'}}/>
               </View>    
           </View>
       
