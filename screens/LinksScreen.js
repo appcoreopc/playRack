@@ -173,6 +173,9 @@ export default class LinksScreen extends React.Component {
        },
        listItemStyle : {
         borderBottomColor: 'transparent' , borderBottomWidth: 0
-       }
+       },
+       controlLink: {
+        paddingVertical: 15,
+      },
     });
   
