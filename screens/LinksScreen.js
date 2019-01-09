@@ -72,21 +72,21 @@ export default class LinksScreen extends React.Component {
 
           <View style={{flexDirection: 'column', paddingTop : 46}}> 
            
-           <View style={{flexDirection: 'row', justifyContent: 'flex-start', alignItems : 'center', paddingLeft : 50}}>
-               <Ionicons name="md-list" size={20} style={{color :'#ffff'}}/>  
-               <TextInput placeholder="search songs" style={{ color :'#fff', paddingLeft : 80, width: 150, borderWidth: 0}}/>
-               <AntDesign name="search1" size={18} style={{ paddingLeft : 64, color :'#ffff'}}/>  
+           <View style={{flexDirection: 'row', justifyContent: 'flex-start', alignItems : 'center', paddingLeft : 20}}>
+               <Ionicons name="md-list" size={26} style={{color :'#ffff'}}/>  
+               <TextInput placeholder="search songs" style={{ color :'#fff', paddingLeft : 100, width: 150, borderWidth: 0}}/>
+               <AntDesign name="search1" size={20} style={{ paddingLeft : 120, color :'#ffff'}}/>  
            </View> 
 
-            <View style={{flexDirection: 'row', justifyContent: 'flex-start', alignItems : 'center', paddingLeft : 50, paddingTop : 10}}>       
+            <View style={{flexDirection: 'row', justifyContent: 'flex-start', alignItems : 'center', paddingLeft : 20, paddingTop : 10}}>       
               <Text style={styles.songTitleText}>Sort by Songs</Text>    
 
-              <View style={{flexDirection: 'row'}}>
-              <Entypo raised name="shuffle" size={18} style={styles.iconShuffle} />
-              <AntDesign name="appstore-o" size={18} style={styles.iconControlRight} />   
+              <View style={{flexDirection: 'row', paddingLeft : 146}}>
+              <Icon raised name='shuffle' type='entypo' size={14} color='#a3b4fd' containerStyle={{backgroundColor : '#fff'}}/>
+              <Icon raised name='grid' type='entypo' size={14} color='#a3b4fd' containerStyle={{backgroundColor : '#fff'}}/>
               </View>    
           </View>
-
+      
           </View>
 
        </ImageBackground>
@@ -96,7 +96,7 @@ export default class LinksScreen extends React.Component {
         
         <RefreshControl
         refreshing={this.state.loading}
-        onRefresh={this.onRefresh}
+        onRefresh={this.onRefresh} iconStyle={{backgroundColor : '#000'}}
         />
       }>
       
