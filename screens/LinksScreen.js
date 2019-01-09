@@ -18,7 +18,7 @@ export default class LinksScreen extends React.Component {
   static navigationOptions = {
     header: null,
   };
-    
+  
   constructor(props) {
     
     super(props);
@@ -69,29 +69,29 @@ export default class LinksScreen extends React.Component {
       <View style={styles.container}>
       
       <ImageBackground source={require('../assets/images/appbgrd.png')} style={styles.backgroundImage}>
-
-          <View style={{flexDirection: 'column', paddingTop : 46}}> 
-           
-           <View style={{flexDirection: 'row', justifyContent: 'flex-start', alignItems : 'center', paddingLeft : 20}}>
-               <Ionicons name="md-list" size={26} style={{color :'#ffff'}}/>  
-               <TextInput placeholder="search songs" style={{ color :'#fff', paddingLeft : 100, width: 150, borderWidth: 0}}/>
-               <AntDesign name="search1" size={20} style={{ paddingLeft : 120, color :'#ffff'}}/>  
-           </View> 
-
-            <View style={{flexDirection: 'row', justifyContent: 'flex-start', alignItems : 'center', paddingLeft : 20, paddingTop : 10}}>       
-              <Text style={styles.songTitleText}>Sort by Songs</Text>    
-
-              <View style={{flexDirection: 'row', paddingLeft : 146}}>
-              <Icon raised name='shuffle'  onPress={() => console.log('hello')}  type='entypo' size={14} color='#a3b4fd' containerStyle={{backgroundColor : '#fff'}}/>
-              <Icon raised name='grid'  onPress={() => console.log('hello')}  type='entypo' size={14} color='#a3b4fd' containerStyle={{backgroundColor : '#fff'}}/>
-              </View>    
-          </View>
       
-          </View>
-
-       </ImageBackground>
-    
-
+      <View style={{flexDirection: 'column', paddingTop : 46}}> 
+      
+      <View style={{flexDirection: 'row', justifyContent: 'flex-start', alignItems : 'center', paddingLeft : 20}}>
+      <Ionicons name="md-list" size={26} style={{color :'#ffff'}}/>  
+      <TextInput placeholder="search songs" style={{ color :'#fff', paddingLeft : 100, width: 150, borderWidth: 0}}/>
+      <AntDesign name="search1" size={20} style={{ paddingLeft : 120, color :'#ffff'}}/>  
+      </View> 
+      
+      <View style={{flexDirection: 'row', justifyContent: 'flex-start', alignItems : 'center', paddingLeft : 20, paddingTop : 10}}>       
+      <Text style={styles.songTitleText}>Sort by Songs</Text>    
+      
+      <View style={{flexDirection: 'row', paddingLeft : 146}}>
+      <Icon raised name='shuffle'  onPress={() => console.log('hello')}  type='entypo' size={14} color='#a3b4fd' containerStyle={{backgroundColor : '#fff'}}/>
+      <Icon raised name='grid'  onPress={() => console.log('hello')}  type='entypo' size={14} color='#a3b4fd' containerStyle={{backgroundColor : '#fff'}}/>
+      </View>    
+      </View>
+      
+      </View>
+      
+      </ImageBackground>
+      
+      
       <ScrollView refreshControl={
         
         <RefreshControl
@@ -160,22 +160,22 @@ export default class LinksScreen extends React.Component {
         marginTop : 0, paddingTop : 0, borderWidth : 0, borderBottomColor: 'transparent', borderBottomWidth: 0
       },
       songTitleText : {
-       fontSize : 13,
-       color : '#fff'
+        fontSize : 13,
+        color : '#fff'
       },
       iconControlRight : {
         paddingRight : 4, 
         color : '#fff',
         paddingLeft : 10
-       },
-       iconShuffle : {
-         paddingLeft : 120,color : '#ffff'
-       },
-       listItemStyle : {
+      },
+      iconShuffle : {
+        paddingLeft : 120,color : '#ffff'
+      },
+      listItemStyle : {
         borderBottomColor: 'transparent' , borderBottomWidth: 0
-       },
-       controlLink: {
+      },
+      controlLink: {
         paddingVertical: 15,
       },
     });
-  
+    
