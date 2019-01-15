@@ -59,14 +59,19 @@ export default class HomeScreen extends React.Component {
       <Text style={styles.songBandText}>Imagine Dragons</Text>              
       </TouchableOpacity>
       
+
       <Animated.View View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems : 'center',
        opacity : this.spinValue }}>    
       <TouchableOpacity onPress={this._controlPlayPrevious} style={styles.helpLink}>          
       <MaterialIcons name="skip-previous" size={30} style={styles.iconControlLeft} />
       </TouchableOpacity>
+
+      
       <TouchableOpacity onPress={this._controlPlayOrPause} style={styles.helpLink}>
-      <MaterialIcons name="play-circle-filled" size={80} color="#7AEEBA"  />
+      <MaterialIcons name="play-circle-filled" size={80} color="#7AEEBA" style={styles.outerCircle} />
       </TouchableOpacity>
+      
+
       <TouchableOpacity onPress={this._controlPlayPNext} style={styles.helpLink}>
       <MaterialIcons name="skip-next" size={30} color="#a3b4fd" style={styles.iconControlRight} />
       </TouchableOpacity>    
@@ -304,6 +309,14 @@ export default class HomeScreen extends React.Component {
                             fontSize: 14,
                             color: '#2e78b7',
                           },
+                          outerCircle: {
+                            borderRadius: 40,
+                            width: 80,
+                            height: 80,
+                            backgroundColor: 'white',
+                            borderColor : '#efefef',
+                            borderWidth : 2
+                          }
                         });
                         
                         
