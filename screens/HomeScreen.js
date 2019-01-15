@@ -210,12 +210,28 @@ export default class HomeScreen extends React.Component {
                             height : 60, width : 90
                           },
                           iconControlLeft : {
-                            paddingRight : 20, 
-                            color : '#a3b4fd'
+                            paddingLeft : 8, 
+                            paddingTop : 2,
+                            marginRight : 10,
+                            color : '#a3b4fd',                      
+                            borderRadius: 40,
+                            width: 48,
+                            height: 36,
+                            backgroundColor: 'white',
+                            borderColor : '#efefef',
+                            borderWidth : 2
                           },
                           iconControlRight : {
-                            paddingLeft : 20, 
-                            color : '#a3b4fd'
+                            marginLeft : 10,
+                            paddingTop : 2,
+                            paddingLeft : 10, 
+                            color : '#a3b4fd',
+                            borderRadius: 40,
+                            width: 48,
+                            height: 36,
+                            backgroundColor: 'white',
+                            borderColor : '#efefef',
+                            borderWidth : 2
                           },
                           container: {
                             flex: 1,
