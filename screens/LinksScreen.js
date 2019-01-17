@@ -8,7 +8,6 @@ import {
   View, RefreshControl
 } from 'react-native';
 
-import { ActivitySpinner } from '../shared/ActivitySpinner';
 import { AntDesign, Entypo, Ionicons } from '@expo/vector-icons';
 import { Icon, List, ListItem } from 'react-native-elements';
 import { IconImageDisplay } from '../shared/IconImageDisplay';
@@ -34,33 +33,29 @@ export default class LinksScreen extends React.Component {
   
   data = [
     {
-      name: 'Amy Farha',
+      name: 'Starry stary night',
       avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
-      subtitle: 'Vice President', 
+      subtitle: 'Amy Farhana', 
       icon: 'av-timer'
     },
     {
-      name: 'Chris Jackson',
+      name: 'Remember the time',
       avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-      subtitle: 'Vice Chairman',
-      icon: 'flight-takeoff'
-      
+      subtitle: 'Michael Jackson',
+      icon: 'flight-takeoff'      
     },
     {
-      name: 'Chris Jackson',
+      name: 'Beautiful world',
       avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-      subtitle: 'Vice Chairman',
-      icon: 'flight-takeoff'
-      
+      subtitle: 'Neil Armstrong',
+      icon: 'flight-takeoff'      
     },
     {
-      name: 'Chris Jackson',
+      name: 'We are the world',
       avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-      subtitle: 'Vice Chairman',
-      icon: 'flight-takeoff'
-      
-    },
-    
+      subtitle: 'Various Artist',
+      icon: 'flight-takeoff'      
+    },    
   ];  
   
   render() {

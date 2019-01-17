@@ -17,7 +17,7 @@ export default class HomeScreen extends React.Component {
   static soundObject; 
   isAudioPlaying = false; 
   isLoaded = false;
-  
+    
   constructor(props) {
     
     super(props);    
@@ -144,7 +144,7 @@ export default class HomeScreen extends React.Component {
                 
                 const source =  new PlaylistItem(
                   'Comfort Fit - “Sorry”',
-                  'https://s3.amazonaws.com/exp-us-standard/audio/playlist-example/Comfort_Fit_-_03_-_Sorry.mp3',
+                  'https://devkepung.file.core.windows.net/audio/intro.mp3?sv=2018-03-28&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-01-17T14:07:02Z&st=2019-01-17T06:07:02Z&spr=https,http&sig=ij2IGonmAQnp4inkHDRIRiHMFXf1kiZRD7p6IR3sHD0%3D',
                   false
                   );
                   
